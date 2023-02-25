@@ -1,4 +1,4 @@
-package dev.pia.movies.collections;
+package dev.pia.movies.models;
 
 import java.util.List;
 
@@ -33,7 +33,8 @@ public class Movie {
 
   private List<String> backdrops;
 
+  // db will only store Ids of the reviews and the reviews will be stored in a separate collection
   @DocumentReference
-  private List<Review> reviews;
+  private List<Review> reviewIds;
   
 }
